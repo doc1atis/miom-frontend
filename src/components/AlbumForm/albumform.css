@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+
+.album-form {
+  background-color: rgb(24, 20, 20);
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.form-input {
+  display: block;
+}
+.my-label {
+  color: white;
+  font-family: "Righteous", cursive;
+}
+.bottom-button-holder {
+  display: flex;
+  justify-content: center;
+}

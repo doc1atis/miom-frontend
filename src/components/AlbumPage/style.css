@@ -1,0 +1,7 @@
+.hold-all {
+  background-color: red;
+  height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+  overflow: auto;
+}

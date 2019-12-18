@@ -1,0 +1,26 @@
+.hold-songItems {
+  background-color: rgb(172, 153, 153);
+  border-radius: 3px;
+  padding-top: 20px;
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  right: 10%;
+  height: 65vh;
+  overflow: auto;
+}
+@media (max-width: 1025px) {
+  .hold-songItems {
+    left: 3%;
+    right: 3%;
+  }
+}
+@media (max-width: 600px) {
+  .hold-songItems {
+    top: 55px;
+    left: 0;
+    right: 0;
+    height: 93vh;
+    border-radius: 0px;
+  }
+}

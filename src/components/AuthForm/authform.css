@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+.auth-form {
+  width: 30%;
+  background-color: #0e0f16;
+}
+.form-label-app {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Righteous", cursive;
+}

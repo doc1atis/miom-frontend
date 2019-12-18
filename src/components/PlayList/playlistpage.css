@@ -1,0 +1,72 @@
+.hold-cards {
+  background-color: #0e0f16;
+  /* background-color: red; */
+  border-radius: 3px;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.row-holder {
+  overflow: auto;
+  height: 60vh;
+}
+
+.card-bottom {
+  background-color: #1a1c29;
+  margin-bottom: 1px;
+}
+.icons-holder {
+  background-color: #1a1c29;
+  border-radius: 20px;
+}
+.bottom-icon {
+  color: aquamarine;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #1a1c29;
+}
+.bottom-icon:focus {
+  outline: none;
+}
+.inner-icon {
+  color: aquamarine;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.inner-icon:focus {
+  outline: none;
+}
+.popover-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.playlist-name {
+  font-family: "Patrick Hand", cursive;
+  color: white;
+  cursor: pointer;
+}
+.playlist-image {
+  cursor: pointer;
+}
+.front-disc {
+  color: aquamarine;
+  margin-right: 3px;
+}
+@media (max-width: 600px) {
+  .row-holder {
+    justify-content: center !important;
+    height: 80vh;
+  }
+  .hold-cards {
+    top: 10%;
+    height: 90vh;
+  }
+}

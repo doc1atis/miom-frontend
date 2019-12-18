@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+#top-nav-bar {
+  background-color: #0e0f16;
+}
+.miom-word {
+  font-family: "Righteous", cursive;
+}
+@media (max-width: 600px) {
+  .links-holder {
+    display: none !important;
+  }
+}

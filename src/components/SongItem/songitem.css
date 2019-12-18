@@ -1,0 +1,62 @@
+.song-item {
+  background-color: white;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+.song-item-body {
+  background-color: #1a1c29;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.song-title {
+  color: white;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.3rem;
+  margin-left: 3px;
+}
+.song-description {
+  color: violet;
+}
+.song-icon {
+  color: aquamarine;
+  font-size: 1.3rem;
+}
+.functionalities {
+  padding-right: 20px;
+}
+.function-button {
+  color: aquamarine;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+/* this applies from 0px to 600px */
+@media (max-width: 600px) {
+  .functionalities {
+    padding-right: 0px;
+    padding-left: 0;
+  }
+  .function-button {
+    font-size: 1rem;
+
+    margin-right: 8px;
+  }
+}
+@media (max-width: 320px) {
+  .x {
+    top: 13%;
+    left: 0;
+    right: 0;
+    height: 87vh;
+  }
+  .song-item {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
