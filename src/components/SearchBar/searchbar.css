@@ -7,21 +7,3 @@
 .search-bar-form {
   width: 40%;
 }
-@media (max-width: 860px) {
-  .search-bar-form {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .search-bar-form {
-    width: 15%;
-    margin-bottom: 0px;
-  }
-
-  .form-control {
-    display: none;
-  }
-  .btn-app-search {
-    border-radius: 4px !important;
-  }
-}

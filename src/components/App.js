@@ -12,6 +12,7 @@ import SongList from "./SongList/SongList";
 import Footer from "./Footer/Footer";
 import AlbumPage from "./AlbumPage/AlbumPage";
 import AddSongPage from "./AddSongPage/AddSongPage";
+
 class App extends React.Component {
   render() {
     return (

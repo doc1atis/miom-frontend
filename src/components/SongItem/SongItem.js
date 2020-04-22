@@ -1,9 +1,6 @@
 import React from "react";
 import "./songitem.css";
 class SongItem extends React.Component {
-  componentDidMount() {
-    window.$('[data-toggle="tooltip"]').tooltip();
-  }
   render() {
     return (
       <li className="media song-item">

@@ -1,47 +1,59 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import LinkText from "../LinkText/LinkText";
 import SearchBar from "../SearchBar/SearchBar";
 class NavBar extends React.Component {
-  downloadIcon = () => {
-    return <i className="fab fa-creative-commons-sampling-plus"></i>;
-  };
   uploadIcon = () => {
-    return <i className="fas fa-cloud-upload-alt"></i>;
+    return (
+      <span style={{ color: "aquamarine" }}>
+        <i className="fas fa-cloud-upload-alt"></i>
+      </span>
+    );
+  };
+  downloadIcon = () => {
+    return (
+      <span style={{ color: "aquamarine" }}>
+        <i className="fab fa-creative-commons-sampling-plus"></i>
+      </span>
+    );
   };
   playlistIcon = () => {
-    return <i className="fas fa-assistive-listening-systems"></i>;
+    return (
+      <span style={{ color: "aquamarine" }}>
+        <i className="fas fa-assistive-listening-systems"></i>
+      </span>
+    );
   };
   render() {
     return (
-      <nav id="top-nav-bar" className="navbar navbar-dark fixed-top">
-        <Link className="navbar-brand" to="/">
-          <i className="fab fa-500px"></i>
-          <span className="miom-word">MIOM</span>
-        </Link>
+      // start here
+      <Navbar className="top-nav-bar" expand="lg" fixed="top" variant="dark">
+        <Navbar.Brand as={Link} to="/" className="miom-word">
+          <i className="fab fa-500px"></i>MIOM
+        </Navbar.Brand>
         <SearchBar />
-        <div className="d-flex justify-content-between links-holder">
-          <LinkText
-            text="uploads"
-            goTo="/uploads"
-            frontIcon={this.uploadIcon()}
-          />
-          <LinkText
-            className="doki"
-            text="downloads"
-            goTo="/downloads"
-            frontIcon={this.downloadIcon()}
-          />
-          <LinkText
-            text="playlists"
-            goTo="/playlists"
-            frontIcon={this.playlistIcon()}
-          />
-          <Button />
-        </div>
-      </nav>
+        <Navbar.Toggle
+          onFocus={(e) => (e.target.style.outline = "none")}
+          aria-controls="basic-navbar-nav"
+        />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link as={Link} to="/uploads" className="link-text">
+              {this.uploadIcon()} upload
+            </Nav.Link>
+            <Nav.Link as={Link} to="/downloads" className="link-text">
+              {this.downloadIcon()} downloads
+            </Nav.Link>
+            <Nav.Link as={Link} to="/playlists" className="link-text">
+              {this.playlistIcon()} playlists
+            </Nav.Link>
+            <Button />
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      // end here
     );
   }
 }
