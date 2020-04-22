@@ -29,7 +29,13 @@ class NavBar extends React.Component {
   render() {
     return (
       // start here
-      <Navbar className="top-nav-bar" expand="lg" fixed="top" variant="dark">
+      <Navbar
+        id="app-nav-bar"
+        className="top-nav-bar"
+        expand="lg"
+        fixed="top"
+        variant="dark"
+      >
         <Navbar.Brand as={Link} to="/" className="miom-word">
           <i className="fab fa-500px"></i>MIOM
         </Navbar.Brand>
